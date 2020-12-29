@@ -1,0 +1,330 @@
+$pink: hsl(322, 100%, 66%);
+$lightPink: hsl(321, 100%, 78%);
+$lightRed: hsl(0, 100%, 63%);
+$darkCyan: hsl(192, 100%, 9%);
+$paleBlue: hsl(207, 100%, 98%);
+
+.fw-400 {
+    font-weight: 400;
+}
+.fw-600 {
+    font-weight: 600;
+}
+.fw-700 {
+    font-weight: 700;
+}
+.error {
+    color: red;
+    display: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Poppins", sans-serif;
+}
+.btn-outline-primary {
+    background-color: #fff;
+    color: $pink;
+    border: 1px $pink solid;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    border-radius: 1.5em;
+}
+.btn-outline-primary:hover {
+    background-color: #fff;
+    color: $lightPink;
+    border: 1px $lightPink solid;
+}
+
+.btn-primary {
+    font-family: "Open Sans", sans-serif;
+    background-color: $pink;
+    font-size: 1em;
+    font-weight: 600;
+    border: 1px $pink solid;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.btn-primary:active {
+    font-family: "Open Sans", sans-serif;
+    background-color: $pink;
+    font-size: 1em;
+    font-weight: 600;
+    border: 1px $pink solid;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.btn-primary:focus {
+    font-family: "Open Sans", sans-serif;
+    background-color: $lightPink !important;
+    font-size: 1em;
+    font-weight: 600;
+    border: 1px $pink solid !important;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.border-btn {
+    border-radius: 2.5em;
+}
+.btn-primary:hover {
+    background-color: $lightPink;
+
+    border: 1px $lightPink solid;
+}
+.background-image {
+    background-size: cover;
+    background-position: center;
+    height: 13em;
+}
+.bg-5 {
+    background-image: url("../images/bg-footer-top-mobile.svg");
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    .content {
+        header {
+            height: 100px;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left-side {
+                img {
+                    height: 25px;
+                    width: auto;
+                }
+            }
+            .right-side {
+                font-family: "Open Sans", sans-serif;
+            }
+        }
+
+        .first-section {
+            margin-top: 5em;
+            margin-bottom: 5em;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: "Poppins", sans-serif;
+            h1 {
+            }
+            p {
+                font-family: "Open Sans", sans-serif;
+                line-height: 1.4;
+                max-width: 500px;
+            }
+        }
+        .second-section {
+            margin-top: 5em;
+            margin-bottom: 5em;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 90%;
+                height: auto;
+            }
+        }
+        .third-section {
+            margin-top: 5em;
+            margin-bottom: 5em;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            .stats {
+                margin-top: 2em;
+                margin-bottom: 2em;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .icon {
+                    width: 70%;
+                    display: flex;
+                    justify-content: start;
+                }
+                .number {
+                    font-size: 7em;
+                }
+            }
+        }
+        .fourth-section {
+            margin-top: 5em;
+            margin-bottom: 5em;
+
+            .bg-1 {
+                background-image: url("../images/bg-section-top-mobile-1.svg");
+            }
+            .bg-2 {
+                background-image: url("../images/bg-section-bottom-mobile-1.svg");
+            }
+            .bg-3 {
+                background-image: url("../images/bg-section-top-mobile-2.svg");
+            }
+            .bg-4 {
+                background-image: url("../images/bg-section-bottom-mobile-2.svg");
+            }
+            .sub-section {
+                padding-top: 2em;
+                padding-bottom: 2em;
+
+                .container {
+                    display: flex;
+                    flex: 1;
+                    flex-direction: column;
+
+                    .icon {
+                        img {
+                            width: 100%;
+                            height: auto;
+                        }
+                    }
+                    .content {
+                        text-align: center;
+                        display: flex;
+                        align-items: center;
+                        flex-direction: column;
+                        justify-content: center;
+                        p {
+                            line-height: 1.4;
+                        }
+                    }
+                }
+            }
+            .bg-blue {
+                background-color: $paleBlue;
+            }
+        }
+        .fifth-section {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        footer {
+            background-color: $darkCyan;
+            .container {
+                display: flex;
+                flex-direction: column-reverse;
+                .left-side {
+                    color: #fff;
+                    .icon {
+                        img {
+                            filter: brightness(0) invert(1);
+                            height: 25px;
+                            width: auto;
+                        }
+                    }
+                    p {
+                        line-height: 1.4;
+                    }
+                    .links {
+                        display: flex;
+                        flex-direction: column;
+                        a {
+                            margin-top: 0.5em;
+                            margin-bottom: 0.5em;
+                            color: #fff;
+                            text-decoration: none;
+
+                            i {
+                                width: 25px;
+                            }
+                        }
+                        a:hover {
+                            color: hsl(192, 94, 49);
+                        }
+                    }
+                    .social-media {
+                        display: flex;
+                        a {
+                            font-size: 1.5em;
+                            margin-right: 0.75em;
+                            color: #fff;
+                        }
+                        a:hover {
+                            color: hsl(192, 94, 49);
+                        }
+                    }
+                }
+                .right-side {
+                    color: #fff;
+                    p {
+                        line-height: 1.4;
+                    }
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        button {
+                            align-self: flex-end;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .bg-5 {
+        background-image: url("../images/bg-footer-top-desktop.svg");
+    }
+    .flex-item {
+        width: 45%;
+    }
+    body {
+        .content {
+            .third-section {
+                flex-direction: row;
+                .stats {
+                    .icon {
+                        width: 95%;
+                    }
+                }
+            }
+            .fourth-section {
+                .bg-1 {
+                    background-image: url("../images/bg-section-top-desktop-1.svg");
+                }
+                .bg-2 {
+                    background-image: url("../images/bg-section-bottom-desktop-1.svg");
+                }
+                .bg-3 {
+                    background-image: url("../images/bg-section-top-desktop-2.svg");
+                }
+                .bg-4 {
+                    background-image: url("../images/bg-section-bottom-desktop-2.svg");
+                }
+                .sub-section {
+                    .container {
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+                }
+                .bg-blue {
+                    .container {
+                        flex-direction: row-reverse;
+                    }
+                }
+            }
+            footer {
+                .container {
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+}
