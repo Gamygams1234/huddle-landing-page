@@ -110,6 +110,7 @@ h6 {
 body {
     font-family: "Open Sans", sans-serif;
     .content {
+        overflow-y: hidden;
         header {
             height: 100px;
             font-family: "Poppins", sans-serif;
